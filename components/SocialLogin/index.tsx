@@ -1,17 +1,17 @@
 import Image from "next/image"
 import styles from "./styles.module.scss"
 
-import google from "../../public/google.svg"
-import facebook from "../../public/facebook.svg"
+import Google from "../../public/google.svg"
+import Facebook from "../../public/facebook.svg"
 
 interface SocialLoginProps {
-  login: "google" | "facebook"
+  login: "Google" | "Facebook"
 }
 
 export function SocialLogin({ login }: SocialLoginProps) {
   const loginOptions = {
-    google,
-    facebook
+    Google,
+    Facebook
   }
 
   return (

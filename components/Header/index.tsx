@@ -1,8 +1,11 @@
+import Link from "next/link"
 import Image from "next/image"
 import styles from "./styles.module.scss"
 
 import { useTheme } from "../../contexts/ThemeContext"
 import { useColorMode } from "../../hooks/useColorMode"
+
+import { Routes } from "../Routes"
 
 export function Header() {
   const { toggleDarkMode } = useTheme()
@@ -10,7 +13,9 @@ export function Header() {
 
   return (
     <div className={styles.container} style={{ backgroundColor: bgColor }}>
-      <Image src={logo} alt="TiAjuda logo" />
+      <Link href="/">
+        <Image src={logo} alt="TiAjuda logo" />
+      </Link>
 
       {/* <!-- Input e label são responsáveis pela responsividade da navbar --> */}
       <input type="checkbox" id="checkbox" />
@@ -19,20 +24,7 @@ export function Header() {
       </label>
 
       <nav>
-        <ul>
-          <li>
-            <a href="">Sobre Nós</a>
-          </li>
-          <li>
-            <a href="">Como Funcionamos</a>
-          </li>
-          <li>
-            <a href="">Serviços</a>
-          </li>
-          <li>
-            <a href="">Suporte</a>
-          </li>
-        </ul>
+        <Routes />
       </nav>
 
       <Image src={switchBTN} onClick={toggleDarkMode} />

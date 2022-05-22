@@ -21,8 +21,8 @@ export function LoginForm() {
         </div>
 
         <div className={styles.socialButtons}>
-          <SocialLogin login="google" />
-          <SocialLogin login="facebook" />
+          <SocialLogin login="Google" />
+          <SocialLogin login="Facebook" />
         </div>
       </form>
     </div>
