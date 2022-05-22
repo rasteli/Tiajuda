@@ -1,11 +1,15 @@
 import Image from "next/image"
 import styles from "./styles.module.scss"
 
-import logo from "../../public/logo.png"
+import { useTheme } from "../../contexts/ThemeContext"
+import { useColorMode } from "../../hooks/useColorMode"
 
 export function Header() {
+  const { toggleDarkMode } = useTheme()
+  const { logo, switchBTN, bgColor } = useColorMode()
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{ backgroundColor: bgColor }}>
       <Image src={logo} alt="TiAjuda logo" />
       <nav>
         <ul>
@@ -23,6 +27,8 @@ export function Header() {
           </li>
         </ul>
       </nav>
+
+      <Image src={switchBTN} onClick={toggleDarkMode} />
     </div>
   )
 }

@@ -21,3 +21,24 @@ a {
 button {
   cursor: pointer;
 }
+
+/* CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8f57fd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8f57fd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6d50a7;
+}

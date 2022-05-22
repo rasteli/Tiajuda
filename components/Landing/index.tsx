@@ -2,14 +2,18 @@ import Image from "next/image"
 import styles from "./styles.module.scss"
 
 import idoso from "../../public/idoso.png"
-import { LoginButton } from "../LoginButton"
+
 import { LoginForm } from "../LoginForm"
+import { LoginButton } from "../LoginButton"
+import { useColorMode } from "../../hooks/useColorMode"
 
 export function Landing() {
+  const { textColor } = useColorMode()
+
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.welcome}>
+        <div className={styles.welcome} style={{ color: textColor }}>
           <h1>
             Bem-vindos ao Ti<span>ajuda</span>,
           </h1>
