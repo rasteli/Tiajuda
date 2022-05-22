@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  .welcome {
+    color: #161616;
+    font-size: 40px;
+
+    span {
+      color: #8f57fd;
+    }
+  }
+
+  // Next Image
+  span {
+    width: 1000px !important;
+  }
+}

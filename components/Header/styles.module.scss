@@ -5,8 +5,12 @@
   flex-direction: row;
   align-items: center;
 
+  position: sticky;
+  top: 0;
+
   // Next Image
   span {
+    margin-top: 20px;
     width: 240px !important;
   }
 
