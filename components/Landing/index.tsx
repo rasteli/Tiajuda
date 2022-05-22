@@ -15,7 +15,7 @@ export function Landing() {
       <div className={styles.container}>
         <div className={styles.welcome} style={{ color: textColor }}>
           <h1>
-            Bem-vindos ao Ti<span>ajuda</span>,
+            Bem-vindos ao Ti<span>ajuda</span>
           </h1>
           <p>
             uma plataforma que o ajudará a resolver o seu problema em{" "}

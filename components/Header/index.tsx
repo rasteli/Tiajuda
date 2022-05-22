@@ -11,6 +11,13 @@ export function Header() {
   return (
     <div className={styles.container} style={{ backgroundColor: bgColor }}>
       <Image src={logo} alt="TiAjuda logo" />
+
+      {/* <!-- Input e label são responsáveis pela responsividade da navbar --> */}
+      <input type="checkbox" id="checkbox" />
+      <label htmlFor="checkbox" className={styles.hamburger}>
+        &#9776;
+      </label>
+
       <nav>
         <ul>
           <li>

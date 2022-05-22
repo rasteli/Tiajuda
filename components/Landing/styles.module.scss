@@ -4,6 +4,7 @@
 
   .welcome {
     margin: 20px;
+    margin-left: 50px;
     font-size: 40px;
 
     span {
@@ -21,4 +22,31 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 1900px) {
+  .container {
+    .welcome {
+      margin: 50px;
+    }
+
+    span {
+      width: 900px !important;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    flex-direction: column-reverse;
+
+    .welcome {
+      font-size: 30px;
+      text-align: justify;
+
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
 }
