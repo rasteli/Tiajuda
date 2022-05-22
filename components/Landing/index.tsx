@@ -18,7 +18,7 @@ export function Landing() {
             Bem-vindos ao Ti<span>ajuda</span>
           </h1>
           <p>
-            uma plataforma que os ajudará a resolver o seu problema em{" "}
+            uma plataforma que os ajudará a resolver os seus problemas em{" "}
             <span>celulares</span>, <span>tablets</span> ou{" "}
             <span>computadores</span>.
           </p>
