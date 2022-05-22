@@ -15,9 +15,9 @@ export function About() {
         <h1>SOBRE NÓS</h1>
         <p>
           Com o <span>avanço da tecnologia</span>, muitos idosos se sentiram
-          abandonados, acarretando a desistência de entrar no mundo digital,
-          deixando-os isolados das novas tecnologias. Com isso em mente, o time
-          da Ti
+          abandonados, acarretando a desistência de entrar no mundo digital e
+          ficando isolados das novas tecnologias. Com isso em mente, o time da
+          Ti
           <span>ajuda</span> criou uma solução:
         </p>
         <div className={styles.solution}>
