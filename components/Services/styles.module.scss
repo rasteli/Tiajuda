@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  margin: 50px;
+
+  // Next Image
+  span {
+    height: 600px !important;
+  }
+
+  h1 {
+    color: #8f57fd;
+    font-size: 120px;
+  }
+
+  div {
+    width: 100%;
+    font-size: 40px;
+
+    span {
+      color: #8f57fd;
+    }
+
+    .customerCare {
+      display: flex;
+
+      div {
+        width: 100%;
+        margin: 10px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        cursor: pointer;
+        background-color: #8e57fd00;
+        transition: background-color 200ms;
+
+        // Next Image
+        span {
+          width: 200px !important;
+          height: 200px !important;
+        }
+
+        &:hover {
+          background-color: #8e57fd15;
+        }
+      }
+    }
+
+    .courses {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+
+      border-radius: 20px;
+    }
+  }
+
+  a {
+    color: #8f57fd;
+    text-decoration: underline;
+    transition: color 100ms;
+
+    &:hover {
+      color: #6d50a7;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    flex-direction: column;
+
+    h1 {
+      font-size: 45px;
+    }
+
+    div {
+      width: 100%;
+      font-size: 23px;
+
+      .solution {
+        margin: 0;
+      }
+    }
+
+    .customerCare {
+      flex-direction: column;
+    }
+
+    .courses {
+      flex-direction: column;
+    }
+  }
+}
