@@ -1,9 +1,13 @@
 import styles from "./styles.module.scss"
 
 export function LoginButton() {
+  function scrollToForm() {
+    document.getElementById("form").scrollIntoView()
+  }
+
   return (
-    <div className={styles.container}>
-      <button>FAÇA SEU LOGIN</button>
-    </div>
+    <button className={styles.container} onClick={scrollToForm}>
+      FAÇA SEU LOGIN
+    </button>
   )
 }

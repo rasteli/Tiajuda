@@ -1,20 +1,13 @@
 .container {
-  display: flex;
+  color: #f8f8f2;
+  background: linear-gradient(#8f57fd, #9f73f5);
 
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 600;
 
-  button {
-    color: #f8f8f2;
-    background: linear-gradient(#9f73f5, #8f57fd);
+  border: 0;
+  border-radius: 18px;
 
-    padding: 20px;
-    font-size: 40px;
-    font-weight: 600;
-
-    border: 0;
-    border-radius: 18px;
-
-    cursor: pointer;
-  }
+  outline: none;
 }

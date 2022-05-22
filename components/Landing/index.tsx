@@ -3,6 +3,7 @@ import styles from "./styles.module.scss"
 
 import idoso from "../../public/idoso.png"
 import { LoginButton } from "../LoginButton"
+import { LoginForm } from "../LoginForm"
 
 export function Landing() {
   return (
@@ -20,7 +21,10 @@ export function Landing() {
         </div>
         <Image src={idoso} alt="Imagem senhor usando um tablet." />
       </div>
-      <LoginButton />
+      <div className={styles.login}>
+        <LoginButton />
+        <LoginForm />
+      </div>
     </>
   )
 }

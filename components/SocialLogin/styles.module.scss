@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  color: #f8f8f2;
+  background: #6d50a7;
+
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+
+  padding: 10px;
+  font-weight: 600;
+
+  text-align: right;
+
+  // Next Image
+  span {
+    width: 25px !important;
+    margin-right: 10px !important;
+  }
+}

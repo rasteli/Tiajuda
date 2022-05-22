@@ -1,0 +1,92 @@
+.container {
+  transform: translateY(100%);
+  background: linear-gradient(#8f57fd, #9f73f5);
+
+  border-radius: 22px;
+  padding: 0px 50px 20px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    position: relative;
+
+    color: #f8f8f2;
+    font-size: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 15%;
+
+      width: 70%;
+      height: 5px;
+      border-radius: 8px;
+      background-color: #6d50a7;
+    }
+  }
+
+  form {
+    .inputBlock {
+      input {
+        font-size: 15px;
+        border: 0;
+        border-radius: 20px;
+        padding: 10px 80px 10px 10px;
+        outline: none;
+        margin-bottom: 15px;
+        color: #4e4e4e;
+      }
+    }
+
+    .forgotPassword {
+      display: flex;
+      justify-content: flex-end;
+
+      color: #f8f8f2;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        font-size: 20px;
+        font-weight: 600;
+
+        border: 0;
+        border-radius: 8px;
+        padding: 10px 25px 10px 25px;
+
+        &:nth-of-type(1) {
+          color: #f8f8f2;
+          background: #6d50a7;
+        }
+
+        &:nth-of-type(2) {
+          color: #8f57fd;
+          background: #f8f8f2;
+        }
+      }
+    }
+
+    .socialButtons {
+      margin-top: 20px;
+
+      display: flex;
+      flex-direction: column;
+
+      button {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
