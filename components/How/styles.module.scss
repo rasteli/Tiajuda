@@ -33,6 +33,16 @@
       text-align: center;
     }
   }
+
+  a {
+    color: #8f57fd;
+    text-decoration: underline;
+    transition: color 100ms;
+
+    &:hover {
+      color: #6d50a7;
+    }
+  }
 }
 
 @media (max-width: 540px) {

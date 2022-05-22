@@ -22,8 +22,8 @@ export function About() {
         </p>
         <div className={styles.solution}>
           Um <span>auxílio técnico</span> especializado para os velhinhos,
-          podendo ser a <span>distância ou presencial</span>, além de oferecer
-          pequenos cursos com instruções orientadas para eles.
+          podendo ser <span>remoto</span> ou <span>presencial</span>, além de
+          oferecer pequenos cursos com instruções orientadas para eles.
         </div>
 
         <p>
