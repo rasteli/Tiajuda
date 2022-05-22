@@ -11,12 +11,12 @@ interface CourseProps {
 export function Course({ desc, advantages, price, isUltimate }: CourseProps) {
   return (
     <div className={styles.container}>
-      <span className={styles.title}>
+      <div className={styles.title}>
         {isUltimate ? "Pacote Universal" : "Pacote"}
-      </span>
-      <span className={styles.desc}>
+      </div>
+      <div className={styles.desc}>
         {isUltimate ? "(Todos os cursos)" : desc}
-      </span>
+      </div>
 
       <ul>
         {advantages.map((adv, index) => (
