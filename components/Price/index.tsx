@@ -6,10 +6,10 @@ interface PriceProps {
 
 export function Price({ price }: PriceProps) {
   return (
-    <span className={styles.price}>
+    <div className={styles.price}>
       R$
       <span className={styles.integer}>{price}</span>,
       <span className={styles.decimal}>00</span>
-    </span>
+    </div>
   )
 }
