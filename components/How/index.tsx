@@ -1,14 +1,10 @@
 import Link from "next/link"
-import Image from "next/image"
 import styles from "./styles.module.scss"
-import bulb from "../../public/bulb.png"
 
-import { useViewport } from "../../hooks/useViewport"
 import { useColorMode } from "../../hooks/useColorMode"
 
 export function How() {
   const { textColor } = useColorMode()
-  const { aboveThreshold } = useViewport(540)
 
   return (
     <div className={styles.container}>
